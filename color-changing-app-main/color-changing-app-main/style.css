@@ -1,8 +1,17 @@
+html{
+    background-image: linear-gradient(120deg, #5f57d1, #c065c0);
+}
+
+.container{
+    min-height: 100vh;
+}
+
 #canvas{
-    background-color: red;
-    color: white;
+    background-color: white;
+    color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
+    font-size: 23px;
+    font-weight: bold;
     width: 600px;
     height: 500px;
     margin: 50px auto 50px;
@@ -10,17 +19,58 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
 }
 
 #button{
+    cursor: pointer;
     text-align: center;
     width: 200px;
     height: 50px;
     margin: 50px auto 50px;
-    color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: black;
+    background: linear-gradient(-40deg,rgb(221, 106, 18),coral,rgb(255, 77, 77));
     border-radius: 5px;
     border-style: none;
     display: block;
+    border-radius: 10px;
 }
+
+.exactcolor{
+    display: flex;
+    justify-content: center;
+}
+
+.colorbutton{
+    cursor: pointer;
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+#red{
+    background-color: #ff0000;
+}
+#blue{
+    background-color: #0000ff;
+}
+#green{
+    background-color: #008000;
+}
+#orange{
+    background-color: #ffa500;
+}
+#purple{
+    background-color: #800080;
+}
+#black{
+    background-color: #000000;
+}
+#yellow{
+    background-color: #ffff00;
+}
+
