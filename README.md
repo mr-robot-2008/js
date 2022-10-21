@@ -52,6 +52,7 @@ To get approval of the pull request much quick 🚀
 ```
 
 <tr><td align="center"><a href="https://github.com/Tanmay-tiwari-cyber"><kbd><img src="https://avatars3.githubusercontent.com/Tanmay-tiwari-cyber?size=100" width="100px;" alt=""/></kbd><br /><sub><b>Tanmay Tiwari<Lohawala></Lohawala></b></sub></a><br /></td>
+<td align="center"><a href="https://github.com/Tanmay-Tiwaricyber"><kbd><img src="https://avatars3.githubusercontent.com/Tanmay-Tiwaricyber?size=100" width="100px;" alt=""/></kbd><br /><sub><b>Tanmay Tiwari<Lohawala></Lohawala></b></sub></a><br /></td>
 
 </tr>
 
