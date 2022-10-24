@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div class="card">
+      <div id="message"></div>
+      <label for="input-to-validate">Type any text bellow:</label>
+      <input name="input-to-validate" id="string-to-validate" type="text"/>
+      <button onclick="getText()" >
+        Verificar
+      </button>
+    </div>
+  </body>
+</html>
+<script>
+
+  let success = false
+  let fail = false
+
+  function getText() {
+    const element = document.getElementById("string-to-validate")
+    let alert = document.getElementById("message")
+    var text = document.createElement("span");
+    if (element.value) {
+      if (isPalindrome(element.value)) {
+        alert.className = "success"
+        alert.textContent = "It's a palindrome"
+      } else {
+        alert.className = "fail"
+        alert.textContent = "Not a palindrome"
+      }
+    }
+  }
+  function isPalindrome(text) {
+    const reversedText = text.toLowerCase().replace(" ", "").split('').reverse().join('')
+    const plainText = text.toLowerCase().replace(" ", "").split('').join('')
+    return plainText === reversedText
+  }
+</script>
+<style>
+  html {
+    background: #eee;
+  }
+  body {
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  label {
+    font-size: 1rem;
+    margin-bottom: 7px;
+    display: block;
+  }
+  input {
+    height: 40px;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    display: block;
+  }
+  button {
+    width: 100%;
+    height: 50px;
+    border: 0px;
+    cursor: pointer;
+    color: #1e1e1e;
+    font-size: 1rem;
+    font-weight: bold;
+    background: rgb(168, 168, 168);
+    display: block;
+  }
+  button:hover {
+    background: #1c1c1c;
+    color: #fff;
+  }
+  .card {
+    background: #fff;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  .success {
+    background: rgb(173, 206, 176);
+    color:rgb(35, 99, 40);
+  }
+  .fail {
+    background: rgb(218, 181, 174);
+    color:rgb(99, 35, 35);
+  }
+  .success, .fail {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+  }
+</style>
