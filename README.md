@@ -56,7 +56,7 @@ To get approval of the pull request much quick 🚀
 
 </tr>
 
-## Contributors
+## Contributors 
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
