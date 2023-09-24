@@ -1,34 +1,12 @@
-<html>
-<head>
-  <title>Multiplication Table</title>
-  <script type="text/javascript">
-    var rows = prompt("How many rows for your multiplication table?");
-    var cols = prompt("How many columns for your multiplication table?");
-    if(rows == "" || rows == null)
-   		 rows = 10;
-    if(cols== "" || cols== null)
-   		 cols = 10;
-    createTable(rows, cols);
-    function createTable(rows, cols)
-    {
-      var j=1;
-      var output = "<table border='1' width='500' cellspacing='0'cellpadding='5'>";
-      for(i=1;i<=rows;i++)
-      {
-    	output = output + "<tr>";
-        while(j<=cols)
-        {
-  		  output = output + "<td>" + i*j + "</td>";
-   		  j = j+1;
-   		}
-   		 output = output + "</tr>";
-   		 j = 1;
+public class Main {
+
+    static boolean isHelloWord(String str) { 
+        return str == "Hello World"; // scary code (@see https://www.codingame.com/playgrounds/1097/the-most-common-java-pitfalls)
+        return str.equals("Hello World"); // correct, but what happens if str is null?
+        return "Hello World".equals(str); // expected solution
     }
-    output = output + "</table>";
-    document.write(output);
+    
+    public static void main(String[] args) {
+        System.out.println(isHelloWord("Hello World"));
     }
-  </script>
-</head>
-<body>
-</body>
-</html>
+}
