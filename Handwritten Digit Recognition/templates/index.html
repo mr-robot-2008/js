@@ -1,0 +1,35 @@
+﻿<!doctype html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Handwritten Digit Recognition </title>
+</head>
+
+<body>
+    <p class="title common">Handwritten Digit Recognition WebApp</p>
+    <div class="common">
+        <!-- <a href="https://github.com/nai-kon/CNN-Digit-Recognition">https://github.com/nai-kon/CNN-Digit-Recognition</a><br/> -->
+        <!-- created by Katz Sasaki -->
+    </div>
+    <br/>
+    <div class="common">
+        <div class="boxitem">
+            <canvas id="inputimg" width="196" height="196"></canvas>
+            <button id="clearbtn">Clear</button>
+        </div>
+        <div class="boxitem">
+            <div id="pred">0</div>
+            <div id="prob">Probability : </div>
+        </div>
+        <div class="boxitem">
+            <svg id="probGraph" width="250" height="196"></svg>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
+    <script src="//d3js.org/d3.v5.min.js"></script>
+
+</body>
